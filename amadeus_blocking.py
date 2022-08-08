@@ -1,4 +1,4 @@
-from amadeus import Client, ResponseError
+from amadeus import Client
 import time 
 import asyncio
 
@@ -8,7 +8,7 @@ start_time = time.time()
 
 async def main():
 
-    for number in range(0, 20):
+    for number in range(20):
         try:
             response = amadeus.reference_data.urls.checkin_links.get(
             airlineCode='BA')

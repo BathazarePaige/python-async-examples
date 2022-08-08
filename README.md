@@ -20,7 +20,7 @@ In the file `amadeus_aiohttp` you can call the the Amadeus Flight-Checkin link A
 
 At this point we wanted to experiment if we could run in an asynchronous way a bunch of API calls. However it was proved it's not possible since Asyncio CANNOT run blocking code in an async way. You can run the code example at `amadeus_blocking`.
 
-Since Amadeus offers a Python SDK which uses the blocking library `requests.py`, how can we use the library in an asynchronous application?
+Since Amadeus offers a Python SDK which uses the blocking `requests` library, how can we use the library in an asynchronous application?
 
 ### Thread executor
 

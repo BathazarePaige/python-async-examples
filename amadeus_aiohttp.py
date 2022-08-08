@@ -26,7 +26,7 @@ async def main():
 
     async with aiohttp.ClientSession() as session:
 
-        for number in range(0, 20):
+        for number in range(20):
             async with session.get(flight_search_endpoint,
                             params=parameters,
                             headers=headers) as resp:
